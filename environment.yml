@@ -1,4 +1,4 @@
-name: ReportGenerator
+name: ReportGeneratorcinda
 channels:
 - conda-forge
 dependencies:
@@ -21,6 +21,7 @@ dependencies:
 - pyarrow=0.16.0
 - tqdm=4.43.0
 - nodejs=13.9.0
+- jinja2=2.11.1
 - pip  # don't pin this version, we always want latest
 - pip:
   - -e src/.  # this installs your custom package in development mode.
