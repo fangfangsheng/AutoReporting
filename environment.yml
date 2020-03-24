@@ -1,0 +1,31 @@
+name: ReportGenerator
+channels:
+- conda-forge
+dependencies:
+- python=3.7  # keep at python 3.7
+- numpy=1.17.5
+- pandas=0.25.3
+- matplotlib=3.1.2
+- python-graphviz=0.13.2
+- jupyter
+- jupyterlab=2.0.1
+- hdf5storage=0.1.15
+- scipy=1.4.1
+- scikit-learn=0.22.1
+- pyprojroot=0.2.0
+- ipykernel=5.1.4
+- nbconvert=5.6.1
+- seaborn=0.10.0
+- pytest=5.3.5
+- altair=4.0.1
+- pyarrow=0.16.0
+- tqdm=4.43.0
+- nodejs=13.9.0
+- pip  # don't pin this version, we always want latest
+- pip:
+  - -e src/.  # this installs your custom package in development mode.
+  - cachier
+  - vega-datasets
+  - tensorflow
+  - jax
+  - jaxlib
